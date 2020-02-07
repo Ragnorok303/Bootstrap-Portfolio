@@ -1,18 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Botstrap-Portfolio</title>
 </head>
+
 <body>
-    <nav class="nav nav-pills flex-column flex-sm-row">
-        <a class="flex-sm-fill text-sm-center nav-link active" href="#">Jason Tompkins</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="index.html">About Me</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="portfolio.html">Portfoilo</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="contact.html">Contact</a>
-      </nav>
+    <header>
+        <div class="topnav">
+            <nav class="nav nav-pills flex-column flex-sm-row">
+                <a class="flex-sm-fill text-sm-center nav-link active" id="logo">Jason Tompkins</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="index.html">About Me</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="portfolio.html">Portfoilo</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div style="text-align:center">
+          <h2>Contact Me</h2>
+        </div>
+        <div class="row">
+          <div class="column">
+            <form action="mailto:jasontompkins22@gmail.com" method="post" enctype="text/plain">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Email</label>
+              <input type="text" id="lname" name="email" placeholder="Your email..">
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit"> 
+            </form>
+          </div>
+        </div>
+      </div>
 </body>
+
 </html>
