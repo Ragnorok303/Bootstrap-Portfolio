@@ -79,32 +79,18 @@
     background:#ffffff;
   }
 
-  .mainimage{
-    float: left;
-    width: 180px;
-    height: 220px;
-    margin: 0 auto;
-    margin-right: 10px;
-  }
-
   p{
     color: #777777;
   }
 
-  footer {
+  .my-footer {
     border-top: 8px solid #4aaaa5;
     background:#666666;
     border-top-width: 8px;
     border-color:#4aaaa5;
     border-top-style: solid;
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    text-align: center;
     color: #777777;
-    margin-top: 20px;
+    height:40px;
   }
 
   input[type=text], select, textarea {
@@ -132,7 +118,7 @@
     float: center;
     border-radius: 5px;
     background-color: #ffffff;
-    padding: 10px;
+    padding: 20px;
     color: #4aaaa5;
     background:#ffffff;
     width: 100%;
@@ -140,6 +126,8 @@
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    overflow-block: auto;
+    height:auto;
   }
 
   .column {
@@ -155,9 +143,9 @@
     clear: both;
   }
 
-#profolio{
+.container2{
   padding: 20px;
-  height: 720px;
+  height: auto;
   color: #4aaaa5;
   background:#ffffff;
   width: 100%;
@@ -167,7 +155,7 @@
   margin-bottom: 20px;
 }
 
-.card{
+.cardx{
     float: left;
     margin: 0 auto;
     position: relative;
@@ -186,27 +174,3 @@
   font-weight: 300;
 }
 
-@media screen and (max-width: 640px) {
-  .column, input[type=submit], header, #logo,.container,input[type=text], select, textarea,.column, .mainimage{
-    width: 100%;
-  }
-  header{
-    float:center
-  }
-}
-
-@media screen and (max-width: 768px) {  
-  .column, input[type=submit],.container,input[type=text], select, textarea,.column{
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 980px) {
-  .column, input[type=submit],.container,input[type=text], select, textarea,.column{
-    width: 100%;
-  }
-  #about, .mainimage{
-    width: 50%;
-    height: 50%;
-  }
-}
