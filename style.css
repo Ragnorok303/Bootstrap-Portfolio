@@ -4,9 +4,7 @@
 }
   body {
     background:url(trees.png); 
-    height: 500px; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-position: center;  
     background-size: cover; 
     
   }
@@ -43,7 +41,6 @@
 
   #about {
     padding: 20px;
-    height: 580px;
     color: #4aaaa5;
     background:#ffffff;
     width: 100%;
@@ -51,6 +48,7 @@
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 40px;
+    overflow-block: auto;
   }
   
   #logo {
@@ -91,7 +89,6 @@
 
   p{
     color: #777777;
-    line-height: 40px;
   }
 
   footer {
@@ -105,7 +102,9 @@
     position: fixed;
     left: 0;
     bottom: 0;
-    text-align: center
+    text-align: center;
+    color: #777777;
+    margin-top: 20px;
   }
 
   input[type=text], select, textarea {
@@ -134,7 +133,6 @@
     border-radius: 5px;
     background-color: #ffffff;
     padding: 10px;
-    height: 550px;
     color: #4aaaa5;
     background:#ffffff;
     width: 100%;
@@ -156,13 +154,6 @@
     display: table;
     clear: both;
   }
-  
-  @media screen and (max-width: 600px) {
-    .column, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
 
 #profolio{
   padding: 20px;
@@ -176,7 +167,7 @@
   margin-bottom: 20px;
 }
 
-.project{
+.card{
     float: left;
     margin: 0 auto;
     position: relative;
@@ -184,17 +175,38 @@
     line-height: 100px;
 }
 
+.card-body{
+  padding:0;
+}
 
-.project h3 {
-    position: absolute;
-    bottom: 20px;
+.card-text{
+  background: #4aaaa5;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 640px) {
+  .column, input[type=submit], header, #logo,.container,input[type=text], select, textarea,.column, .mainimage{
     width: 100%;
-    padding: 10px;
-    margin-bottom: 0;
-    font-weight: 300;
-    line-height: 30px;
-    color: #ffffff;
-    text-align: center;
-    background: #4aaaa5;
-    border-bottom: 0;
   }
+  header{
+    float:center
+  }
+}
+
+@media screen and (max-width: 768px) {  
+  .column, input[type=submit],.container,input[type=text], select, textarea,.column{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .column, input[type=submit],.container,input[type=text], select, textarea,.column{
+    width: 100%;
+  }
+  #about, .mainimage{
+    width: 50%;
+    height: 50%;
+  }
+}
