@@ -83,16 +83,6 @@
     color: #777777;
   }
 
-  .my-footer {
-    border-top: 8px solid #1d84d8;
-    background:#666666;
-    border-top-width: 8px;
-    border-color:#1d84d8;
-    border-top-style: solid;
-    color: #777777;
-    height:40px;
-  }
-
   input[type=text], select, textarea {
     width: 900px;
     padding: 12px;
