@@ -191,7 +191,7 @@
     margin-left: 20px;
   }
  }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 600px) {
   #logo,.column,input[type=text], select, textarea{
     width: 100%;
   }
