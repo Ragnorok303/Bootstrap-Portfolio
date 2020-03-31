@@ -171,6 +171,17 @@
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link{
   color:white;
 }
+
+footer {
+  width: 100%;
+  height: 25px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  
+}
+
 @media screen and (max-width: 980px) {
   .column,input[type=text], select, textarea{
     width: 100%;
